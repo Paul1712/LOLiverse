@@ -78,7 +78,7 @@ Asegúrate de tener Node.js, npm o yarn, y Expo CLI instalados. Luego, sigue est
 
 ## Visual Demo
 
-![Visual Demo](https://github.com/user-attachments/assets/272e9030-3908-49a5-a51e-e8524afece84)
+![Visual Gif](https://github.com/user-attachments/assets/a55f5320-935f-4113-a34c-6361e4f2f925)
 
 
 ## Detalles técnicos
