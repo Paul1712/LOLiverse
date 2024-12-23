@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import AuthNavigator from "./navigation/AuthNavigator";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import useAuthStore from "./state/useAuthStore";
+import AppNavigator from "./navigation/AppNavigator";
+import { StatusBar } from "react-native";
+import { NetworkProvider } from "./context/NetworkProvider";
+import NoInternetBanner from "./components/NoInternetBanner";
 
-export default function App() {
+const App = () => {
+  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NetworkProvider>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+        <NoInternetBanner />
+        {!isLoggedIn ? <AuthNavigator /> : <AppNavigator />}
+      </GestureHandlerRootView>
+    </NetworkProvider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
