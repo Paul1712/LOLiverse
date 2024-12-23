@@ -7,10 +7,11 @@ Aplicación móvil creada en React Native con Expo, diseñada para explorar chis
 2. [Funcionamiento](#funcionamiento)
 3. [Características](#características)
 4. [Pantallas Claves](#pantallas-clave)
-5. [Detalles Técnicos](#detalles-técnicos)
-6. [Contribuciones](#contribuciones)
-7. [Entorno de Desarrollo](#entorno-de-desarrollo)
-8. [Desarrollador](#desarrollador)
+5. [Visual Demo](#visual-demo)
+6. [Detalles Técnicos](#detalles-técnicos)
+7. [Contribuciones](#contribuciones)
+8. [Entorno de Desarrollo](#entorno-de-desarrollo)
+9. [Desarrollador](#desarrollador)
 
 
 ## Instalación
@@ -73,6 +74,11 @@ Asegúrate de tener Node.js, npm o yarn, y Expo CLI instalados. Luego, sigue est
 - **Pantalla de Búsqueda**: Proporciona un buscador para consultar chistes mediante https://api.chucknorris.io/jokes/search?query={query}. Los resultados se muestran en una lista interactiva.
 
 - **Pantalla de Perfil**: Muestra la información del usuario y ofrece la opción de cerrar sesión.
+
+
+## Visual Demo
+
+![Visual Demo](https://github.com/user-attachments/assets/272e9030-3908-49a5-a51e-e8524afece84)
 
 
 ## Detalles técnicos
